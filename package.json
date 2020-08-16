@@ -1,0 +1,13 @@
+{
+  "name": "react-native-dev-test",
+  "version": "1.0.0",
+  "main": "./native/src/index.ts",
+  "repository": "git@github.com:jtmozley/hippoed_dev_test.git",
+  "author": "Justin Mozley <justin.mozley@contractor.allsocial.tech>",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently \"yarn run-app\" \"yarn run-server\"",
+    "run-app": "cd native && yarn && yarn start",
+    "run-server": "cd api && yarn && yarn start"
+  }
+}
